@@ -86,10 +86,33 @@ $$\mathbf{m}_{ij} = \mathbf{W}_{\text{msg2}} \cdot \text{ReLU}\left(\mathbf{W}_{
 
 The real project model has larger hidden dimensions. The dimensions are reduced here only so that the complete arithmetic can be checked manually. The sequence of operations is unchanged: $\text{Linear}(6 \to 4) \to \text{ReLU} \to \text{Linear}(4 \to 2)$.
 
-#### Parameters from Python Script:
-$$\mathbf{W}_{\text{msg1}} = \begin{bmatrix} 0.2 & -0.1 & 0.3 & 0.1 & 0.4 & -0.2 \\ -0.3 & 0.2 & 0.1 & -0.2 & 0.1 & 0.3 \\ 0.1 & 0.3 & -0.2 & 0.3 & -0.1 & 0.2 \\ -0.2 & 0.1 & 0.4 & -0.1 & 0.2 & 0.1 \end{bmatrix}, \quad \mathbf{b}_{\text{msg1}} = \begin{bmatrix} +0.10 \\ -0.05 \\ +0.05 \\ 0.00 \end{bmatrix}$$
+#### Parameters from Python Script
 
-$$\mathbf{W}_{\text{msg2}} = \begin{bmatrix} 0.4 & -0.3 & 0.2 & 0.5 \\ -0.2 & 0.5 & 0.1 & -0.4 \end{bmatrix}$$
+$$
+\mathbf{W}_{\text{msg1}} =
+\begin{bmatrix}
+0.2 & -0.1 & 0.3 & 0.1 & 0.4 & -0.2 \\
+-0.3 & 0.2 & 0.1 & -0.2 & 0.1 & 0.3 \\
+0.1 & 0.3 & -0.2 & 0.3 & -0.1 & 0.2 \\
+-0.2 & 0.1 & 0.4 & -0.1 & 0.2 & 0.1
+\end{bmatrix},
+\qquad
+\mathbf{b}_{\text{msg1}} =
+\begin{bmatrix}
++0.10 \\
+-0.05 \\
++0.05 \\
+0.00
+\end{bmatrix}
+$$
+
+$$
+\mathbf{W}_{\text{msg2}} =
+\begin{bmatrix}
+0.4 & -0.3 & 0.2 & 0.5 \\
+-0.2 & 0.5 & 0.1 & -0.4
+\end{bmatrix}
+$$
 
 ---
 
